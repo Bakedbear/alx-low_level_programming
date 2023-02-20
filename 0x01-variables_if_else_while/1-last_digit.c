@@ -6,6 +6,7 @@
  * main - assigns a random number to a variable when executed  
  * prints the last digit of the number stored in variable n
  * Return:  0 to exit code
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
