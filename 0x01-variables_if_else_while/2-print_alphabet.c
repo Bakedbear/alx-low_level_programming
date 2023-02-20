@@ -4,13 +4,15 @@
   * main - prints alphabet in lowercase
   * Return: 0 exit code of the program if successful.
  */
-int main(void) 
+int main() 
 {
     
-    for(int x = 'A'; x <= 'Z'; x++)
+    int x;
+    
+    for (x = 'a'; x <= 'z'; x++)
     {
-        putchar(tolower(x));
+        putchar(x);
     }
-
+    putchar('\n');
     return (0);
 }
