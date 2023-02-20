@@ -14,12 +14,12 @@ int main(void)
 		{
 		    if (m > n && n != m)
 		    {
-		        putchar(n);
+		    	putchar(n);
 		    	putchar(m);
-		    	if (n != 57 || m != 57)
+		    	if (n != 56 || m != 57)
 		    	{
-		    	    putchar(',');
-		    	    putchar(' ');
+		    		putchar(',');
+		    		putchar(' ');
 		    	}
 		    }
 			
