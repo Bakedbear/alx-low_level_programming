@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
-  * main - prints alphabet in lowercase
-  * Return: 0 exit code of the program if successful.
+  * main - program that prints the alphabet in lowercase
+  * Return: 0 exit code of the program if successful
  */
-int main(void) 
+int main(void)
 {
-    int x;
-    
-    for (x = 'a'; x <= 'z'; x++)
-    {
-        putchar(x);
-    }
-    putchar('\n');
-    return (0);
+	int x;
+
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		putchar(x);
+	}
+	putchar('\n');
+	return (0);
 }
