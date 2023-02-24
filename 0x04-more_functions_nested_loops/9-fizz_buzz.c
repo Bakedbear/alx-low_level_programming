@@ -15,15 +15,15 @@ int main(void)
 
 		if (flag3 && flag5)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (flag3)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if (flag5)
 		{
-			printf("Buzz");
+			printf("Buzz ");
 		}
 		else
 		{
