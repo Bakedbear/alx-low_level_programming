@@ -13,7 +13,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (check_prime_number(int n, int n - 1));
+	return (check_prime_number(n, n - 1));
 }
 
 /**
