@@ -18,8 +18,7 @@ int is_palindrome(char *s)
 /**
  * find_str_len - finds length of string
  * @s: string
- * Return: 0 if string is empty
- * otherwise return string length 
+ * Return: 0 if string is empty, otherwise return string length 
  */
 int find_str_len(char *s)
 {
@@ -32,7 +31,7 @@ int find_str_len(char *s)
  * check_Palindrome - checks if string is palindrome
  * @s: string to check
  * @i: integer to check
- * len - length of string
+ * @len: length of string
  * Return: 0 if not palindrome, 1 if palindrome
  *
  */
