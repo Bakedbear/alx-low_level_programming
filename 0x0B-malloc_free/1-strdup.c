@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - returns a pointer to a new string which is a duplicate
@@ -10,9 +11,24 @@
 char *_strdup(char *str)
 {
 	int *ptr;
+	unsigned int i, len;
+
+	i = 0;
+	len = 0;
 
 	if (str == NULL)
-		return ("NULL\n");
-	ptr = (int *) malloc(8 * sizeof(char));
-	free(ptr);
+		return (NULL);
+
+	while (*str++)
+		len++;
+
+	ptr = (int *) malloc((len + 1) * sizeof(char));
+	
+	if (str == NULL)
+		return (NULL);
+
+	while (ptr[i] = str[i] != '\0')
+		i++;
+
+	return (ptr);
 }
