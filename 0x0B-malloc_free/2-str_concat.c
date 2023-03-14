@@ -1,54 +1,47 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
-int find_length(char *str);
+#include <stdlib.h>
 
 /**
  * str_concat - concatenates two strings
- * @s1: first string
+ * @s1: string 1
  * @s2: string 2
- * Return: pointer to newly allocated space in memory containing
- * concatenated string
- * return NULL on failure
+ * Return: pointer to newly allocated space in memory with
+ * both strings, or return NULL on failure
  */
 char *str_concat(char *s1, char *s2)
 {
-	size_t str1, str2, str3, i;
+	char *sum;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
+
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
+
+	sum = malloc(sizeof(char) * (len1 + len2 + 1));
+	if (sum == NULL)
+		return (NULL);
 
 	i = 0;
+	j = 0;
 
-	char *a;
-
-	str1 = find_length(str1);
-	str2 = find_length(str2);
-	str3 = str1 + str2 + 1;
-	a = malloc(str3);
-
-	while (*str1 != '\0')
+	if (s1)
 	{
-		a[i] = *str1;
-		str1++;
-		i++;
+		while (i < len1)
+		{
+			sum[i] = s1[i];
+			i++;
+		}
 	}
-	while (*str2 != '\0')
+	if (s2)
 	{
-		a[i] = *str1;
-		str2++;
-		i++;
+		while (j < len2)
+		{
+			sum[i] = s2[i];
+			j++;
+		}
 	}
-	a[i] = '\0';
-	return a;
-}
+	sum[i] = '\0';
 
-/**
- * find_length - finds length of string
- * @str: string
- * Return: length of string
- */
-int find_length(char *str)
-{
-	if (*str == '\0')
-		return (0);
-	return (1 + find_length(str + 1));
+	return (sum);
 }
