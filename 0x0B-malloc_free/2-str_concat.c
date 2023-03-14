@@ -33,11 +33,13 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
+
 	if (s2)
 	{
-		while (j < len2)
+		while (i < (len1 + len2))
 		{
 			sum[i] = s2[i];
+			i++;
 			j++;
 		}
 	}
