@@ -14,27 +14,27 @@ int find_length(char *str);
  */
 char *str_concat(char *s1, char *s2)
 {
-	size_t s1, s2, s3, i;
+	size_t str1, str2, str3, i;
 
 	i = 0;
 
 	char *a;
 
-	s1 = find_length(s1);
-	s2 = find_length(s2);
-	s3 = s1 + s2 + 1;
-	a = malloc(s3);
+	str1 = find_length(str1);
+	str2 = find_length(str2);
+	str3 = str1 + str2 + 1;
+	a = malloc(str3);
 
-	while (*s1 != '\0')
+	while (*str1 != '\0')
 	{
-		a[i] = *s1;
-		s1++;
+		a[i] = *str1;
+		str1++;
 		i++;
 	}
-	while (*s2 != '\0')
+	while (*str2 != '\0')
 	{
-		a[i] = *s1;
-		s2++;
+		a[i] = *str1;
+		str2++;
 		i++;
 	}
 	a[i] = '\0';
