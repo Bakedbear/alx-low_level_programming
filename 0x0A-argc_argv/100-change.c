@@ -19,12 +19,16 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (argv[1] < 0)
-		printf("0\n");
 
 	value = atoi(argv[1]);
-	min = 0;
+        min = 0;
 
+	if (value < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	
 	for (i = 0; i < 5 && value >= 0; i++)
 	{
 		while (value >= coins[i])
