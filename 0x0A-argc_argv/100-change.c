@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 
 	value = atoi(argv[1]);
+	min = 0;
 
 	for (i = 0; i < 5 && value >= 0; i++)
 	{
