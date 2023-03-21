@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * free_dog - frees dogs
+ * free_dog - frees memory allocated for struct dog
  * @d: pointer to structure address in memory 
  */
 void free_dog(dog_t *d)
@@ -13,5 +13,4 @@ void free_dog(dog_t *d)
         	free(d->owner);
         	free(d);
 	}
-
 }
