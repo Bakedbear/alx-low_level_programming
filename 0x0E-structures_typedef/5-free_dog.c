@@ -1,5 +1,5 @@
-#ifndef dog_h
-#define dog_h
+#include <stdlib.h>
+#include "dog.h"
 
 /**
  * free_dog - frees dogs
