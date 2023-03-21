@@ -2,12 +2,10 @@
 
 /**
  * main - prints the name of the file it was compiled from
- * @argc: argument count
- * @argv: array of parameters
  * Return: 0 success
  */
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", __FILE__);
 	return (0);
 }
