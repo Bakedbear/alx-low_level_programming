@@ -16,4 +16,9 @@ struct dog
 	char *owner;
 };
 
+/**
+ * typedef - alias for struct name
+ */
+typedef struct dog dog_t;
+
 #endif
