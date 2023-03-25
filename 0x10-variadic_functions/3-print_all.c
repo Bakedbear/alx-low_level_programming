@@ -21,10 +21,13 @@ void print_all(const char * const format, ...)
 			{
 				case 'c':
 					printf("%s%c", sep, va_arg(ptr, int));
+					break;
 				case 'i':
                                         printf("%s%d", sep, va_arg(ptr, int));
+					break;
 				case 'f':
                                         printf("%s%f", sep, va_arg(ptr, double));
+					break;
 				case 's':
                                         s = va_arg(ptr, char *);
 					if (!s)
