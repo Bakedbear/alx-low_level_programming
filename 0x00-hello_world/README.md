@@ -1,4 +1,5 @@
 ## 0x00. C - Hello, World
+### Basic C commands and various outputs through the stages of C file compilation
 0. Script that runs a C file through the preprocessor and save the result into another file.
 1. Script that compiles a C file but does not link.
 2. Script that generates the assembly code of a C code and save it in an output file.
